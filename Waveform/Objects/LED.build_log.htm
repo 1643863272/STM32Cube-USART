@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Sherlock Holmes, CQJTU, LIC=YA39H-WUXSP-TGY7T-RXWPI-FQ86V-8901Y
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  D:\Some App Use\MDK\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\SomeProject\STM32Project\4-REG-LED\LED.uvprojx
+Project File Date:  10/17/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'D:\Some App Use\MDK\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(40): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOB_CRL &= ~(0xE);  // 倒数二、三、四位设置为0
+                  ~~ ^~~~~~
+main.c(46): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA_CRL &= ~(0xE);  // 倒数二、三、四位设置为0
+                  ~~ ^~~~~~
+main.c(56): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOB_ODR &= ~(1<<0); // 点灯1
+                          ~~ ^~~~~~~
+main.c(60): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOC_ODR &= ~(1<<15); // 点灯2
+                          ~~ ^~~~~~~~
+main.c(64): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOA_ODR &= ~(1<<0); // 点灯3
+                          ~~ ^~~~~~~
+5 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=524 RO-data=252 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\LED.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Some App Use\MDK\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
